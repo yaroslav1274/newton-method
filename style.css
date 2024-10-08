@@ -1,0 +1,132 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+input {
+  display: block;
+}
+
+/* ------------------------------ */
+
+body {
+  background-image: url('mak.avif');
+  
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+}
+
+body > div {
+  margin: 0 25px;
+}
+
+.results {
+  width: 300px;
+  max-width: 300px;
+  height: 36vh;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(43, 21, 4, 0.6);
+}
+
+.results > p {
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 30px;
+}
+
+.input_container {
+  height: 40vh;
+  max-width: 700px; 
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border-bottom: 3px solid rgb(255, 0, 0);
+  box-shadow: 0 5px 15px 5px rgba(43, 21, 4, 0.6);
+}
+
+.input_container .input-box {
+  display: flex;
+  margin: 15px;
+}
+
+input {
+  height: 40px;
+  font-size: 1.3rem;
+  margin: 0 15px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: none;
+  transition: .5s ease;
+  border-bottom: 4px solid rgb(255, 0, 0);
+  appearance: none;
+}
+input:focus {
+  outline: none;
+  background-color: rgba(255, 212, 212, 0.75);
+}
+
+button {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  border-bottom: rgb(255, 0, 0) 4px solid;
+  background-color: rgb(233, 173, 173);
+  transition: .2s;
+  cursor: pointer;
+  color: #424242;
+}
+
+button:hover {
+  background-color: rgb(222, 133, 133);
+}

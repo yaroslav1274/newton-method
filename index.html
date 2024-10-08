@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Метод Ньютона</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="input_container">
+    <div class="input-box">
+      <input type="number" name="A" id="A" placeholder="Нижня межа">
+      <input type="number" name="B" id="B" placeholder="Верхня межа">
+    </div>
+    <div class="input-box">
+      <input type="number" name="Kmax" id="Kmax" placeholder="Макс. к-ть ітерацій">
+      <input type="number" name="Epsilon" id="Epsilon" placeholder="Точність">
+    </div>
+    <div class="input-box">
+      <button id="check">Обчислити</button>
+    </div>
+  </div>
+
+  <div class="results">
+    <p id="results"></p>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
